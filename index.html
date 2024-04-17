@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&family=Old+Standard+TT&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="skills">
+            <div class="name">
+                <input class="mainname" type="text" placeholder="John Brown">
+                <input class="profession" type="text" placeholder="Web Developer">
+                <div class="decor1"></div>
+            </div>
+            <div id="experience">
+                <p class="title">Experience</p>
+                <div class="devider"></div>
+                <div class="job">
+                    <div class = "jobcont">
+                        <div class="nameyear">
+                            <input class="jobname" type="text" placeholder="Creative Land">
+                            <p class="slash">/</p>
+                            <input class="jobyear" type="text" placeholder="2015-2018">
+                        </div>
+                        <input class="jobprof" type="text" placeholder="Senior Web Developer">
+                        <textarea class="jobdescr" rows="5" placeholder="Porttior amet massa Done cporttitor dolor et nisl molestie ium feliscon lore tfringilla, delislibero lorem ipsum, ollcitudin est dolor time, lorem ipsu diammolestie pretium, molestie pretium etfring."></textarea>
+                    </div>
+                    <img class="icon" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                </div>
+                <div class="job">
+                    <div class="jobcont">
+                        <div class="nameyear">
+                            <input class="jobname" type="text" placeholder="Freelance">
+                            <p class="slash">/</p>
+                            <input class="jobyear" type="text" placeholder="2012-2015">
+                        </div>
+                        <input class="jobprof" type="text" placeholder="Graphic Designer">
+                        <textarea class="jobdescr" rows="5" placeholder="Porttior amet massa Done cporttitor dolor et nisl molestie ium feliscon lore tfringilla, delislibero lorem ipsum, ollcitudin est dolor time, lorem ipsu diammolestie pretium, molestie pretium etfring."></textarea>
+                    </div>
+                    <img class="icon" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="buttonadd" onclick="createNewJob(); remUpdate()">
+                    <p id="badd">Добавить</p>
+                </div>
+            </div>
+            <div id="education">
+                <p class="title">Education</p>
+                <div class="devider"></div>
+                <div class="edu">
+                    <div class="educont">
+                        <div class="nameyear">
+                            <input class="eduname" type="text" placeholder="Bachelors of arts">
+                            <p class="slash">/</p>
+                            <input class="eduyear" type="text" placeholder="2007-2009">
+                        </div>
+                        <input class="eduuniv" type="text" placeholder="Imperial University">
+                        <textarea class="edudescr" rows="5" placeholder="Porttior amet massa Done cporttitor dolor et nisl molestie ium feliscon lore tfringilla, delislibero lorem ipsum, ollcitudin est dolor time, lorem ipsu diammolestie pretium, molestie pretium etfring."></textarea>
+                    </div>
+                    <img class="icon" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                </div>
+                <div class="edu">
+                    <div class="educont">
+                        <div class="nameyear">
+                            <input class="eduname" type="text" placeholder="Multimedia">
+                            <p class="slash">/</p>
+                            <input class="eduyear" type="text" placeholder="2005-2006">
+                        </div>
+                        <input class="eduuniv" type="text" placeholder="Green School & College">
+                        <textarea class="edudescr" rows="5" placeholder="Porttior amet massa Done cporttitor dolor et nisl molestie ium feliscon lore tfringilla, delislibero lorem ipsum, ollcitudin est dolor time, lorem ipsu diammolestie pretium, molestie pretium etfring."></textarea>
+                    </div>
+                    <img class="icon" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                </div>
+                </div>
+            <div class="navigation">
+                <div class="buttonadd" onclick="createNewEdu(); remUpdate()">
+                    <p id="badd2">Добавить</p>
+                </div>
+            </div>
+            <div class="references">
+                <p class="title">references</p>
+                <div class="devider"></div>
+                <div class="referinn">
+                    <div class="ref">
+                        <input class="refname" type="text" placeholder="Jensen Smitha">
+                        <input class="refjob" type="text" placeholder="Director">
+                        <div class="refcont">
+                            <p class="refcontstyle">Phone:</p>
+                            <input class="refphone" type="text" placeholder="+79999999999">
+                        </div>
+                        <div class="refcont">
+                            <p class="refcontstyle">Email:</p>
+                            <input class="refemail" type="text" placeholder="jensensmitha@gmail.com">
+                        </div>
+                    </div>
+                    <div class="ref">
+                        <input class="refname" type="text" placeholder="William Kleiman">
+                        <input class="refjob" type="text" placeholder="Web Developer">
+                        <div class="refcont">
+                            <p class="refcontstyle">Phone:</p>
+                            <input class="refphone" type="text" placeholder="+79999999999">
+                        </div>
+                        <div class="refcont">
+                            <p class="refcontstyle">Email:</p>
+                            <input class="refemail" type="text" placeholder="willikeiman@gmail.com">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hobbies">
+            <div class="photo">
+                <div class="photoplace"></div>
+            </div>
+            <div class="profile">
+                <p class="title">Profile</p>
+                <div class="devider"></div>
+                <textarea class="profdescr" rows="5" placeholder="Porttior amet massa Done cporttitor dolor et nisl molestie ium feliscon lore tfringilla, delislibero lorem ipsum, ollcitudin est dolor time, lorem ipsu diammolestie pretium, molestie pretium etfring."></textarea>
+            </div>
+            <div class="contacts">
+                <p class="title">Contact me</p>
+                <div class="devider"></div>
+                <p class="refcontstyle">Address:</p>
+                <input class="peraddress" type="text" placeholder="12th Avenue Street Australia 40000">
+                <p class="refcontstyle">Mobile:</p>
+                <input class="perphone" type="text" placeholder="+79999999999">
+                <p class="refcontstyle">Home:</p>
+                <input class="perhome" type="text" placeholder="+79999999999">
+                <p class="refcontstyle">Email:</p>
+                <input class="peremail" type="text" placeholder="Scarletwatson@gmail.com">
+                <p class="refcontstyle">Website:</p>
+                <input class="persite" type="text" placeholder="Scarletwaison.com">
+                <p class="refcontstyle">Skype:</p>
+                <input class="perskype" type="text" placeholder="username">
+            </div>
+            <div id="perskills">
+                <p class="title">Personal skills</p>
+                <div class="devider"></div>
+                <div class="skillitem">
+                    <img class="iconskill" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                    <input class="skill" type="text" placeholder="Wordpress">
+                    <div class="skillbar">
+                        <div class="someclass">
+                            <input type="number" class="percent" placeholder="80" max="100" min="0" value="">
+                            <p class="perc">%</p>
+                        </div>
+                        <div class="max">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillitem">
+                    <img class="iconskill" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                    <input class="skill" type="text" placeholder="Joomla">
+                    <div class="skillbar">
+                        <div class="someclass">
+                            <input class="percent" type="number" placeholder="80" max="100" min="0" value="">
+                            <p class="perc">%</p>
+                        </div>
+                        <div class="max">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillitem">
+                    <img class="iconskill" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                    <input class="skill" type="text" placeholder="Photoshop">
+                    <div class="skillbar">
+                        <div class="someclass">
+                            <input class="percent" type="number" placeholder="80" max="100" min="0" value="">
+                            <p class="perc">%</p>
+                        </div>
+                        <div class="max">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillitem">
+                    <img class="iconskill" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                    <input class="skill" type="text" placeholder="Illustrator">
+                    <div class="skillbar">
+                        <div class="someclass">
+                            <input class="percent" type="number" placeholder="80" max="100" min="0" value="">
+                            <p class="perc">%</p>
+                        </div>
+                        <div class="max">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillitem">
+                    <img class="iconskill" src="icon.png" alt="Delete" onclick="this.parentElement.remove(); remUpdate()">
+                    <input class="skill" type="text" placeholder="HTML 5">
+                    <div class="skillbar">
+                        <div class="someclass">
+                            <input class="percent" type="number" placeholder="80" max="100" min="0" value="">
+                            <p class="perc">%</p>
+                        </div>
+                        <div class="max">
+                            <div class="prog"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="buttonadd" onclick="createNewSkill(); remUpdate()">
+                    <p id="badd3">Добавить</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttoncont">
+        <div class="btns">
+            <div class="buttonrem">
+                <p id="bref">Восстановить</p>
+            </div>
+            <div class="buttonrem">
+                <p id="bsave">Сохранить</p>
+            </div>
+            <div class="buttonrem">
+                <p id="bload">Загрузить</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

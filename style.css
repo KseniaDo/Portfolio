@@ -1,0 +1,324 @@
+.container, .buttoncont{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #fcfcfc;
+}
+
+.buttoncont{
+    width: 60%;
+    justify-content: space-around;
+}
+
+p {
+    cursor: default;
+    margin: 0 auto;
+    font-family: 'Mulish', sans-serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea {
+    padding: 0;
+    margin-bottom: 2px;
+    border: none;
+    resize: none;
+    font-family: 'Mulish', sans-serif;
+}
+
+input{
+    padding: 0;
+    margin-bottom: 2px;
+    border: none;
+    resize: none;
+    font-family: 'Mulish', sans-serif;
+}
+
+.skills{
+    width: 35%;
+    padding: 30px;
+    background-color: white;
+}
+
+.hobbies{
+    width: 25%;
+    padding: 30px;
+    background-color: #eeeef0;
+}
+
+.job, .edu{
+    display: flex;
+}
+
+.icon, .iconskill{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+
+    padding-top: 5px;
+}
+
+.iconskill{
+    width: 20px;
+    height: 20px;
+
+    margin-right: 5px;
+}
+
+.name{
+    margin-bottom: 50px;
+}
+
+.mainname{
+    margin-top: 50px;
+
+    text-transform: uppercase;
+    font-size: 30pt;
+    color: #126199;
+}
+
+.profession{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+    font-size: 16pt;
+}
+
+.decor1{
+    width: 50px;
+    height: 3px;
+    background-color: #126199;
+}
+
+.title{
+    margin-top: 50px;
+    margin-bottom: unset;
+
+    text-transform: uppercase;
+    font-size: 16pt;
+    color: #126199;
+}
+
+.devider{
+    width: 100%;
+    height: 1px;
+    margin-bottom: 20px;
+
+    background-color: #9d9d9d;
+}
+
+.nameyear{
+    padding-top: 5px;
+    display: flex;
+}
+
+.jobname, .jobyear, .eduname, .eduyear{
+    height: 26px;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14pt;
+
+    padding: unset;
+}
+
+
+.jobprof, .eduuniv{
+    font-size: 11pt;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+}
+
+.jobdescr, .edudescr{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 10pt;
+    display: block;
+}
+
+.referinn{
+    font-weight: 600;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.refname{
+    font-weight: 600;
+    font-size: 12pt;
+}
+
+.refcont{
+    display: flex;
+}
+
+.refcontstyle{
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 10pt;
+}
+
+.photoplace{
+    width: 157px;
+    height: 157px;
+
+    border-radius: 100%;
+    background-color: #c7c8ca;
+
+    margin: 0 auto 50px;
+}
+
+.profdescr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    font-size: 10pt;
+
+    background-color: #eeeef0;
+}
+
+.slash {
+    margin-left: 0;
+    margin-right: 20px;
+
+    font-weight: 600;
+}
+
+.refjob, .refphone, .refemail{
+    margin-left: 10px;
+    font-weight: 600;
+    width: 70%;
+}
+
+.peraddress, .perphone, .perhome, .peremail, .persite, .perskype, .skill{
+    width: 100%;
+    margin-bottom: 20px;
+
+    background-color: #eeeef0;
+}
+
+.buttonadd, .buttonrem{
+    margin-top: 50px;
+    display: flex;
+    justify-items: center;
+    width: 100px;
+}
+
+.buttonrem{
+    margin-left: 50px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+#badd, #badd2, #brem, #brem2, #badd3, #brem3, #bref, #bsave, #bload{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12pt;
+
+    color: white;
+    background-color: #126199;
+}
+
+#badd3, #brem3{
+    padding: 10px;
+    margin-right: 40px;
+
+    font-size: 10pt;
+}
+
+#clear{
+    margin-top: 50px;
+}
+
+.navigation{
+    margin: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillitem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill{
+    width: 35%;
+    font-size: 10pt;
+    margin-right: 20px;
+}
+
+.skillbar{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    margin-bottom: 20px;
+}
+
+.percent{
+    width: 25%;
+    margin-left: auto;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 10pt;
+
+    background-color: #eeeef0;
+}
+
+.max{
+    width: 100%;
+    height: 10px;
+    margin-bottom: 0;
+    background-color: #9b9b9b;
+}
+
+.prog{
+    width: 80%;
+    height: 10px;
+
+    background-color: #126199;
+}
+
+.someclass{
+    display: flex;
+}
+
+.perc{
+    margin: 0;
+    font-size: 10pt;
+}
+
+
+.styletrue{
+    /*border: 2px solid green;*/
+    box-shadow: none;
+    border-radius: 10px;
+    transition: box-shadow 1s ease-in-out;
+}
+
+.styletrue:focus{
+    box-shadow: 0 0 10px green;
+}
+
+.stylefalse{
+    box-shadow: none;
+    border-radius: 10px;
+    transition: box-shadow 1s ease-in-out;
+    color: darkred;
+}
+
+.stylefalse:focus{
+    box-shadow: 0 0 10px red;
+}
